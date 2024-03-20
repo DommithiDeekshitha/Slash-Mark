@@ -5,10 +5,10 @@
 <p>To build a gender and age detector that can approximately guess the gender and age of the person (face) in a picture or through webcam.</p>
 
 <h2>About the Project :</h2>
-<p>In this Python Project, I had used Deep Learning to accurately identify the gender and age of a person from a single image of a face. The predicted gender may be one of ‘Male’ and ‘Female’, and the predicted age may be one of the following ranges- (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100) (8 nodes in the final softmax layer). It is very difficult to accurately guess an exact age from a single image because of factors like makeup, lighting, obstructions, and facial expressions. And so, I made this a classification problem instead of making it one of regression.</p>
+<p>In this Python project, Deep Learning was utilized to precisely discern the gender and approximate age of individuals from single facial images. The gender prediction yields either 'Male' or 'Female', while the age prediction falls within predefined ranges: (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100) (8 nodes in the final softmax layer). Given challenges such as makeup, lighting variations, obstructions, and facial expressions, pinpointing an exact age from a single image is exceptionally arduous. Hence, the problem was formulated as a classification task rather than regression.</p>
 
 <h2>Dataset :</h2>
-<p>For this python project, I had used the Adience dataset; the dataset is available in the public domain and you can find it <a href="https://www.kaggle.com/ttungl/adience-benchmark-gender-and-age-classification">here</a>. This dataset serves as a benchmark for face photos and is inclusive of various real-world imaging conditions like noise, lighting, pose, and appearance. The images have been collected from Flickr albums and distributed under the Creative Commons (CC) license. It has a total of 26,580 photos of 2,284 subjects in eight age ranges (as mentioned above) and is about 1GB in size. The models I used had been trained on this dataset.</p>
+  <p>For this Python project, I utilized the Adience dataset, which is publicly available and accessible via <a href="https://www.kaggle.com/ttungl/adience-benchmark-gender-and-age-classification">this link</a>. This dataset serves as a benchmark for face photos, encompassing various real-world imaging conditions such as noise, lighting, pose, and appearance. The images are sourced from Flickr albums and are distributed under the Creative Commons (CC) license. The dataset comprises 26,580 photos of 2,284 subjects across eight age ranges (as previously mentioned) and occupies approximately 1GB of storage space. The models employed in this project were trained using this dataset.</p>
 
 <h2>Additional Python Libraries Required :</h2>
 <ul>
@@ -33,7 +33,7 @@
   <li>a few pictures to try the project on</li>
   <li>detect.py</li>
  </ul>
- <p>For face detection, we have a .pb file- this is a protobuf file (protocol buffer); it holds the graph definition and the trained weights of the model. We can use this to run the trained model. And while a .pb file holds the protobuf in binary format, one with the .pbtxt extension holds it in text format. These are TensorFlow files. For age and gender, the .prototxt files describe the network configuration and the .caffemodel file defines the internal states of the parameters of the layers.</p>
+ <p>For face detection, we utilize a .pb file, which is a protobuf file (protocol buffer) containing both the graph definition and the trained weights of the model. This file enables us to execute the trained model effectively. While a .pb file stores the protobuf in binary format, a file with the .pbtxt extension contains it in text format. Both are TensorFlow files. Regarding age and gender prediction, the .prototxt files outline the network configuration, while the .caffemodel file specifies the internal states of the parameters within the layers.</p>
  
  <h2>Usage :</h2>
  <ul>
